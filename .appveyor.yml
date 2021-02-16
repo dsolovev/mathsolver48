@@ -1,15 +1,10 @@
 image: Visual Studio 2019
 
-#init:
-#  - git config --global core.autocrlf input
-#  - del "c:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets"
-#  - del "c:\Program Files (x86)\MSBuild\4.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets"
+shallow_clone: true
 
-#shallow_clone: true
-
-#branches:
-#  only:
-#    - main
+branches:
+  only:
+    - main
 
 platform: x64
 
@@ -18,3 +13,4 @@ build_script:
   - cd build
   - cmake .. -G "Visual Studio 16"
   - cmake --build . --config "Release"
+  - ctest .
