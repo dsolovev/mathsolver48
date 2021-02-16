@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int /*argc*/, char const */*argv*/[])
+int main(int, char const *[])
 {
     int a, b, f;
     std::cout << "vvedite chisla a, b, f: ";
