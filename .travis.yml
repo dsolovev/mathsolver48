@@ -1,0 +1,16 @@
+language: cpp
+sudo: required
+
+matrix:
+  include:
+    - os: linux
+      dist: focal
+    - os: osx
+      osx_image: xcode11.6
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build . --config "Release"
+#  - echo 15 10 3 | ./mathsolver48.exe
