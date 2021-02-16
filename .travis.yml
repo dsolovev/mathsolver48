@@ -13,4 +13,4 @@ script:
   - cd build
   - cmake ..
   - cmake --build . --config "Release"
-  - echo 15 10 3 | ./mathsolver48.exe
+  - echo 15 10 3 | ./mathsolver48
