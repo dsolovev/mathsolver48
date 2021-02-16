@@ -13,5 +13,4 @@ build_script:
   - cd build
   - cmake .. -G "Visual Studio 16"
   - cmake --build . --config "Release"
-  - dir /s
-  - ctest .
+  - echo 15 10 3 | .\Release\mathsolver48.exe
