@@ -9,8 +9,5 @@ branches:
 platform: x64
 
 build_script:
-  - mkdir build
-  - cd build
-  - cmake .. -G "Visual Studio 16"
-  - cmake --build . --config "Release"
+  - cmake -H. -Bbuild -G "Visual Studio 16" --config "Release"
   - echo 15 10 3 | .\Release\mathsolver48.exe
